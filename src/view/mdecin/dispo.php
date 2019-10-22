@@ -12,7 +12,7 @@
     </div>
 	
 <div class=>
-	<div class="col-md-12">
+	<div class="col-md-9">
 	  <div class="panel panel-primary">
 		<div class="panel-heading">mydisponibilite</div>
 			<div class="panel-body">
@@ -29,6 +29,15 @@
 					<div class="form-group">
 						<label class="control-label">Heure rdv</label>
 						<input class="form-control"  type="time" name="heure_disponibilte" value ="" />
+					</div class="form-group">
+					<div class="form-group">
+					<div class="form-group">
+						<label class="control-label">Datefin</label>
+						<input class="form-control" type="date" name="datfin" value ="" />
+					</div>
+					<div class="form-group">
+						<label class="control-label">heure de decente</label>
+						<input class="form-control"  type="time" name="heurefin" value ="" />
 					</div class="form-group">
 					<div class="form-group">
 						<label class="control-label">indentifiant medecin</label>

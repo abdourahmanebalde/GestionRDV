@@ -91,7 +91,7 @@ if(isset($_POST["modifier"]))
     //echo $result;
     //header("location:../view/patient/list.php");
 }
-
+if(isset($_GET['id_patient']))
 {
     /**
      * suprression dans la base
@@ -103,3 +103,5 @@ if(isset($_POST["modifier"]))
 
 
 ?>
+
+

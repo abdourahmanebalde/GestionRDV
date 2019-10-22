@@ -1,5 +1,6 @@
 <?php
-//require_once "../controller/PatientController.php";
+
+session_start();
 class PatientDB extends DB{
     
 
@@ -31,16 +32,17 @@ class PatientDB extends DB{
     }
     public function pati()
     {
+       
         $sql = "SELECT Medecin.nom,Patient.prenom,Patient.nom, Rdv.date_rdv,Rdv.heure_rdv
         FROM Medecin , Patient,Rdv
-        WHERE Medecin.id_medecin = Rdv.id_medecin AND (Patient.id_patient = Rdv.id_patient AND Medecin.id_medecin='1')";
+        WHERE Medecin.id_medecin = Rdv.id_medecin AND (Patient.id_patient = Rdv.id_patient AND Medecin.id_medecin=' ".$_SESSION["id_medecin"]."')";
         return $this->db->query($sql);
     }
     public function tipeuh()
     {
         $sql = "SELECT Patient.id_patient,Patient.prenom,Patient.nom,Patient.email,Patient.telephone,Patient.age,Patient.sexe
         FROM Patient, Secretaire
-        WHERE Patient.id_secretaire = Secretaire.id_secretaire AND Secretaire.id_secretaire='1'";
+        WHERE Patient.id_secretaire = Secretaire.id_secretaire AND Secretaire.id_secretaire=' ".$_SESSION["id_secretaire"]."'";
         return $this->db->query($sql);
     }
     

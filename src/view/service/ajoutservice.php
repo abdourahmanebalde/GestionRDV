@@ -24,7 +24,7 @@ if(isset($_GET['id_service']))
             <li><a href="../../view/accueil/accueil.php">Accueil</a></li>
         </ul>
 </div>
-<div class="container col-md-6">
+<div class="container col-md-8">
 		<div class="panel panel-primary">
 			<div class="panel-heading">Nos differente service</div>
 			<div class="panel-body">
@@ -55,7 +55,7 @@ if(isset($_GET['id_service']))
 			</div>
 		</div>
 	</div>
-<div class="col-md-6">
+<div class="col-md-4">
 		 <div class="panel panel-primary">
 		   <div class="panel-heading">formulaire d'ajout d'un service</div>
 			 <div class="panel-body">

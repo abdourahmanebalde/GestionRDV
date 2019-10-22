@@ -3,12 +3,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="../../../../../public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../../../public/css/bootstrap.min.css"/>
 </head>
 <body>
 <div class="nav navbar-primary">
         <ul class="nav navbar-nav">
-            <li><a href="../../../../view/accueil/accueil.php">Accueil</a></li>
+            <li><a href="../../../view/accueil/accueil.php">Accueil</a></li>
         </ul>
         </div>
 

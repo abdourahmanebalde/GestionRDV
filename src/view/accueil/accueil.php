@@ -25,51 +25,11 @@ if($_SESSION["email"] == "")
                 </a>
             </li>
             <?php } ?>
-            <?php if($_SESSION["id_profil"] == "2" &&  $_SESSION["id_service"]=="1" ){?>
-             <?php //header("location../service/cadiologie//liste.php?id=".$_SESSION["id_medecin"]);?>
-
-
-               <img src="../../../public/login/images/img-03.png" alt="IMG">
-            <li><a href="../service/cadiologie//liste.php">liste des patients</a></li>
-            <li><a href="../mdecin/dispo.php">monplanning</a></li>
-            <li>
-                <a href="logout.php" style="color:red;font-size:18px;">
-                    Deconnexion
-                </a>
-             </li>
-            <li>
-                <a href="#" style="color:green;font-size:18px;">
-                 Docteur <?php  echo  $_SESSION["prenom"]." ".$_SESSION["nom"]; ?>
-                </a>
-            </li>
-
-            <?php } ?>
-            <?php if($_SESSION["id_profil"] == "2" &&  $_SESSION["id_service"]=="2" ){?>
-             <h1> bienvenue dans la service pediatrie </h1>
-            <li><a href="../service/cadiologie//liste.php">liste des patients</a></li>
-            <li><a href="../mdecin/dispo.php">monplanning</a></li>
-            <li>
-                <a href="logout.php" style="color:red;font-size:18px;">
-                    Deconnexion
-                    </a>
-                     </li>
-            <li>
-            <a href="#" style="color:green;font-size:18px;">
-                 Docteur <?php  echo  $_SESSION["prenom"]." ".$_SESSION["nom"]; ?>
-              
-                </a>
-            </li>
-           
-            <?php } ?>
+            <?php if($_SESSION["id_profil"] == "2"  ){?>
+             <?php header("location:../../pageMedecin.php?id_medecin=".$_SESSION["id_medecin"]);?>
+           <?php } ?>
             <?php if($_SESSION["id_profil"] == "3") {?>
-            <li><a href="../patient/list.php">ajouter un patient</a></li>
-            <li><a href="../rdv/listerdv.php">donner un rendez vous</a></li>
-            
-            <li>
-                <a href="logout.php" style="color:red;font-size:18px;">
-                    Deconnexion
-                </a>
-            </li>
+            <?php header("location:../../pageSecretaire.php?id_secretaire=".$_SESSION["id_secretaire"]);?>
             <?php } ?>
             
         </ul>

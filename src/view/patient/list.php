@@ -25,7 +25,7 @@ if(isset($_GET['id_patient']))
         </ul>
         </div>
 
-		<div class="container col-md-12">
+		<div class="container col-md-9">
 		<div class="panel panel-primary">
 			<div class="panel-heading">liste des Patients du service cardiologie</div>
 			<div class="panel-body">
@@ -43,6 +43,7 @@ if(isset($_GET['id_patient']))
 
 					</tr>
 					<?php
+					   
 						require_once "../../model/DB.php";
 						require_once "../../model/PatientDB.php";
 						$patientdb = new PatientDB();
@@ -54,9 +55,9 @@ if(isset($_GET['id_patient']))
 							<td>".$patient[1]."</td>
 							<td>".$patient[2]."</td>
 							<td>".$patient[3]."</td>
+							<td>".$patient[4]."</td>
 							<td>".$patient[5]."</td>
 							<td>".$patient[6]."</td>
-							<td>".$patient[4]."</td>
 
 							
 							<td><a href='?id_patient=$patient[0]'>Editer</td>
@@ -68,7 +69,7 @@ if(isset($_GET['id_patient']))
 			</div>
 		</div>
 	</div>
-        <div class="col-md-12">
+        <div class="col-md-3">
 		<div class="panel panel-primary">
 		<div class="panel-heading">Formulaire patient</div>
 			<div class="panel-body">
@@ -118,7 +119,7 @@ if(isset($_GET['id_patient']))
 								$secretaires = $secretairedb->findAll()->fetchAll();
 								foreach ($secretaires as $key => $secretaire)
 								{
-									echo "<option value='".$secretaire[0]."'>$secretaire[1]</option>";
+									echo "<option class= 'form-control ' value='".$secretaire[0]."'>$secretaire[1]</option>";
 								}
 							?>
 						</select>

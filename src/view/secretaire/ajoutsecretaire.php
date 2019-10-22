@@ -24,7 +24,7 @@ if(isset($_GET['id_secretaire']))
             <li><a href="../../view/accueil/accueil.php">Accueil</a></li>
         </ul>
     </div>
- <div class="container col-md-12">
+ <div class="container col-md-9">
 	<div class="panel panel-primary">
 	 <div class="panel-heading">liste des Secretaire</div>
 		<div class="panel-body">
@@ -65,7 +65,7 @@ if(isset($_GET['id_secretaire']))
 			</div>
 		</div>
 	</div>
-        <div class="col-md-12">
+        <div class="col-md-3">
 		<div class="panel panel-primary">
 			<div class="panel-heading">formulaire d'ajout d'un secretaire</div>
 			<div class="panel-body">

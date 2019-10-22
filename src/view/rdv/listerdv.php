@@ -25,18 +25,17 @@ if(isset($_GET['id_rdv']))
             <li><a href="../../view/accueil/accueil.php">Accueil</a></li>
         </ul>
         </div>
-		<div class="container col-md-12">
+		<div class="container col-md-9">
 		<div class="panel panel-primary">
-			<div class="panel-heading">liste des Medecin</div>
+			<div class="panel-heading">Planning des Medecin</div>
 			<div class="panel-body">
 			<table class="table">
 					<tr>
 					<td>idenfiant du medecin</td>
 						<td>Prenom</td>
 						<td>Nom</td>
-						<td>planning</td>
+						<td>  programmer un rdv</td>
 						<td>heure de travail</td>
-						
 						<td>Action</td>
 						<td>Action</td>
 
@@ -66,7 +65,7 @@ if(isset($_GET['id_rdv']))
 		</div>
 </div>
 
-<div class="col-md-12">
+<div class="col-md-3">
 		<div class="panel panel-primary">
 			<div class="panel-heading">formulaire rdv</div>
 			<div class="panel-body">

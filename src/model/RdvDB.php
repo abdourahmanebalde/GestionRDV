@@ -1,4 +1,5 @@
 <?php
+session_start();
 class RdvDB extends DB{
 
     public function __construct(){
@@ -27,7 +28,7 @@ class RdvDB extends DB{
         $sql =  " SELECT Medecin.id_medecin,Medecin.prenom,Medecin.nom,disponibilite.date_disponibilte,disponibilite.datfin,disponibilite.heure_disponibilte,disponibilite.heurefin 
          from Medecin,disponibilite,Service 
          where Medecin.id_medecin=disponibilite.id_medecin and 
-        (Medecin.id_service=Service.id_service and Service.id_service=1)";
+        (Medecin.id_service=Service.id_service and Service.id_service=' ".$_SESSION["id_secretaire"]."')";
         return $this->db->query($sql);
     }
     public function remove($id_rdv)
