@@ -2,7 +2,7 @@
 Login Details
 
 
-Login Details for admin : admin/passer
+Login Details for admin : balde@gmail.com/passer
 
 Login Details for Secretaire: sane@gmail.com/passer
 
